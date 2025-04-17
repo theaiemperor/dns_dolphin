@@ -1,0 +1,19 @@
+{
+  "name": "dns_dolphin",
+  "version": "1.0.0",
+  "description": "A Domain name Server",
+  "scripts": {
+    "dev": "node --import=tsx --watch src/index.ts",
+    "build": "tsc",
+    "start": "pnpm tsc --build && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "theaiemperor/arman",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.0",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "tsx": "^4.19.3"
+  }
+}

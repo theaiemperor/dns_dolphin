@@ -1,0 +1,47 @@
+# Distribution
+dist
+out
+build
+coverage/
+*.map
+node_modules
+
+# Logs
+*.log*
+logs
+
+# Environment
+*.env*
+
+# IDE
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# OS-Specific Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Package Managers
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Temporary Files
+*.tmp
+*.temp
+*.swo
+*.swn
+*.bak
+*.pid
+*.seed
+*.pid.lock
+*.gz
+*.zip
+*.tar
+*.rar
+*.7z
