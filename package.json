@@ -2,6 +2,7 @@
   "name": "dns_dolphin",
   "version": "1.0.0",
   "description": "A Domain name Server",
+  "type": "module",
   "scripts": {
     "dev": "node --import=tsx --watch src/index.ts",
     "build": "tsc",
@@ -13,7 +14,11 @@
   "license": "ISC",
   "packageManager": "pnpm@10.8.0",
   "devDependencies": {
+    "@types/express": "^5.0.1",
     "@types/node": "^22.14.1",
     "tsx": "^4.19.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
   }
 }
