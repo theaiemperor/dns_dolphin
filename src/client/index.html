@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DNS Dolphin - Server Manager</title>
+    <link rel="dns_dolphin icon" href="/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div style="display: flex; justify-content: center;">
+            <img src="/logo.png" width="100" />
+        </div>
+        <h1>DNS Dolphin - Server Manager</h1>
+        <form id="server-form">
+            <input type="text" id="name" placeholder="Server Name" required />
+            <input type="text" id="ip" value="localhost" placeholder="IP Address" required />
+            <input type="number" id="port" placeholder="Port" required />
+            <button type="submit" id="submit-button">Add Server</button>
+        </form>
+
+        <table id="server-table">
+            <thead>
+                <tr>
+                    <th class="col-name">Name</th>
+                    <th class="col-ip">IP Address</th>
+                    <th class="col-port">Port</th>
+                    <th class="col-actions">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="server-list">
+                <!-- Server rows will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="connector.js"></script>
+    <script src="modal.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

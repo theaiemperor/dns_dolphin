@@ -1,0 +1,131 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #80deea);
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00796b;
+    margin-top: -7px;
+    margin-bottom: 50px;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  form input {
+    flex: 1 1 200px;
+    padding: 10px;
+    border: 1px solid #b2dfdb;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #004d40;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #b2dfdb;
+    text-align: left;
+    word-wrap: break-word;
+  }
+  
+  thead {
+    background-color: #00796b;
+    color: #ffffff;
+  }
+  
+  .col-name, .col-ip {
+    width: 35%;
+  }
+  
+  .col-port {
+    width: 15%;
+  }
+  
+  .col-actions {
+    width: 15%;
+    text-align: center;
+  }
+  
+  /* Action Buttons */
+  .actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 5px;
+    transition: transform 0.2s ease;
+  }
+  
+  .actions button:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Icons */
+  .actions .fa-edit {
+    color: #0288d1;
+  }
+  
+  .actions .fa-trash {
+    color: #d32f2f;
+  }
+  
+  /* Wave Animation */
+  @keyframes wave {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+  }
+  
+  .wave-effect {
+    animation: wave 0.5s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    form {
+      flex-direction: column;
+    }
+  
+    .col-name, .col-ip, .col-port, .col-actions {
+      width: 100%;
+    }
+  }
+  
